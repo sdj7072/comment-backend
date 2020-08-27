@@ -36,3 +36,9 @@ DROP TABLE COMMNET;
 
 
 java -jar axonserver.jar
+
+
+axonserver.properties
+
+내용
+axoniq.axonserver.devmode.enabled=true
