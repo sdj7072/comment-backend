@@ -1,0 +1,5 @@
+/Users/deokjae.seo/Documents/workspace-sts/comment-backend/comment-query/src/main/java/com/pgm/repository/CommentRepository.java
+/Users/deokjae.seo/Documents/workspace-sts/comment-backend/comment-query/src/main/java/com/pgm/entity/CommentEntity.java
+/Users/deokjae.seo/Documents/workspace-sts/comment-backend/comment-query/src/main/java/com/pgm/projection/CommentProjection.java
+/Users/deokjae.seo/Documents/workspace-sts/comment-backend/comment-query/src/main/java/com/pgm/CommentApplication.java
+/Users/deokjae.seo/Documents/workspace-sts/comment-backend/comment-query/src/main/java/com/pgm/core/event/CommentWriteEvent.java
