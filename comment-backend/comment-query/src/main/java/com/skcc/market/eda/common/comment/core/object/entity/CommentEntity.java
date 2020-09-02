@@ -1,4 +1,4 @@
-package com.pgm.entity;
+package com.skcc.market.eda.common.comment.core.object.entity;
 
 
 import java.time.LocalDateTime;
@@ -30,17 +30,17 @@ import lombok.Setter;
 public class CommentEntity {
 	
 	@Id
-	@NonNull
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "COMMENT_ID", nullable = false)
 	private Long id;
 	
 	@NonNull
 	@Column(name = "POST_ID", nullable = false)
-	private String postId;
+	private Long postId;
 	
+	@NonNull
 	@Column(name = "MEMBER_ID", nullable = false)
-	private String memberId;
+	private Long memberId;
 	
 	@Column(name = "POST_TYPE")
 	private String postType;

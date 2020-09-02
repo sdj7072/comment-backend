@@ -1,5 +1,5 @@
-/Users/deokjae.seo/Documents/workspace-sts/comment-backend/comment-command/src/main/java/com/pgm/endpoint/CommentRestEndpoint.java
-/Users/deokjae.seo/Documents/workspace-sts/comment-backend/comment-command/src/main/java/com/pgm/core/event/CommentWriteEvent.java
-/Users/deokjae.seo/Documents/workspace-sts/comment-backend/comment-command/src/main/java/com/pgm/core/command/WriteCommentCommand.java
-/Users/deokjae.seo/Documents/workspace-sts/comment-backend/comment-command/src/main/java/com/pgm/aggregate/CommentAggregate.java
-/Users/deokjae.seo/Documents/workspace-sts/comment-backend/comment-command/src/main/java/com/pgm/CommentApplication.java
+/Users/deokjae.seo/git/comment-backend/comment-backend/comment-command/src/main/java/com/skcc/market/CommentRestEndpoint.java
+/Users/deokjae.seo/git/comment-backend/comment-backend/comment-command/src/main/java/com/skcc/market/eda/common/comment/core/object/aggregate/CommentAggregate.java
+/Users/deokjae.seo/git/comment-backend/comment-backend/comment-command/src/main/java/com/skcc/market/eda/common/comment/core/object/event/CommentWriteEvent.java
+/Users/deokjae.seo/git/comment-backend/comment-backend/comment-command/src/main/java/com/skcc/market/CommentApplication.java
+/Users/deokjae.seo/git/comment-backend/comment-backend/comment-command/src/main/java/com/skcc/market/eda/common/comment/core/object/command/WriteCommentCommand.java
