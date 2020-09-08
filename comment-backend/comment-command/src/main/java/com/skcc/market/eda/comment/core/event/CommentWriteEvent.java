@@ -1,4 +1,4 @@
-package com.skcc.market.eda.common.comment.core.object.event;
+package com.skcc.market.eda.comment.core.event;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

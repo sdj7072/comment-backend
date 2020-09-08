@@ -1,5 +1,10 @@
 /Users/deokjae.seo/git/comment-backend/comment-backend/comment-command/src/main/java/com/skcc/market/CommentRestEndpoint.java
-/Users/deokjae.seo/git/comment-backend/comment-backend/comment-command/src/main/java/com/skcc/market/eda/common/comment/core/object/aggregate/CommentAggregate.java
-/Users/deokjae.seo/git/comment-backend/comment-backend/comment-command/src/main/java/com/skcc/market/eda/common/comment/core/object/event/CommentWriteEvent.java
+/Users/deokjae.seo/git/comment-backend/comment-backend/comment-command/src/main/java/com/skcc/market/eda/comment/core/event/CommentDisplayYnUpdateEvent.java
+/Users/deokjae.seo/git/comment-backend/comment-backend/comment-command/src/main/java/com/skcc/market/eda/comment/core/command/WriteCommentCommand.java
+/Users/deokjae.seo/git/comment-backend/comment-backend/comment-command/src/main/java/com/skcc/market/eda/comment/core/command/DisplayYnUpdateCommentCommand.java
+/Users/deokjae.seo/git/comment-backend/comment-backend/comment-command/src/main/java/com/skcc/market/eda/comment/core/event/CommentModifyEvent.java
 /Users/deokjae.seo/git/comment-backend/comment-backend/comment-command/src/main/java/com/skcc/market/CommentApplication.java
-/Users/deokjae.seo/git/comment-backend/comment-backend/comment-command/src/main/java/com/skcc/market/eda/common/comment/core/object/command/WriteCommentCommand.java
+/Users/deokjae.seo/git/comment-backend/comment-backend/comment-command/src/main/java/com/skcc/market/eda/comment/core/aggregate/CommentAggregate.java
+/Users/deokjae.seo/git/comment-backend/comment-backend/comment-command/src/main/java/com/skcc/market/eda/comment/core/command/ModifyCommentCommand.java
+/Users/deokjae.seo/git/comment-backend/comment-backend/comment-command/src/main/java/com/skcc/market/eda/comment/core/event/CommentWriteEvent.java
+/Users/deokjae.seo/git/comment-backend/comment-backend/comment-command/src/main/java/com/skcc/market/eda/common/config/SwaggerConfig.java

@@ -2,11 +2,13 @@ package com.skcc.market;
 
 import org.axonframework.commandhandling.gateway.CommandGateway;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.skcc.market.eda.common.comment.core.object.command.WriteCommentCommand;
+import com.skcc.market.eda.comment.core.command.WriteCommentCommand;
 
 @RestController
+@RequestMapping("/v1")
 public class CommentRestEndpoint {
 
 	private final CommandGateway commandGateway;
@@ -15,7 +17,7 @@ public class CommentRestEndpoint {
 		this.commandGateway = commandGateway;
 	}
 	
-	@GetMapping("/v1/comment/")
+	@GetMapping("/comment")
 	public void writeComment() {
 		commandGateway.send(new WriteCommentCommand((long) 1, (long) 1, "01", "test", "Y"));
 	}

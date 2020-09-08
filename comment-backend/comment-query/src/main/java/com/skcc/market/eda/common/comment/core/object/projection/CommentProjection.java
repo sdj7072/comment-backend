@@ -1,6 +1,7 @@
 package com.skcc.market.eda.common.comment.core.object.projection;
 
 import java.time.Instant;
+import java.time.LocalDateTime;
 
 import org.axonframework.config.ProcessingGroup;
 import org.axonframework.eventhandling.EventHandler;
@@ -33,8 +34,12 @@ public class CommentProjection {
 				.postType(event.getPostType())
 				.content(event.getContent())
 				.displayYn(event.getDisplayYn())
+				.registerTime(LocalDateTime.now())
+				.updateTime(LocalDateTime.now())
 				.build();
+		
 		System.out.println("Result : " + commentEntity.getPostId());
+		
 		commentRepository.save(commentEntity);
 	}
 }

@@ -1,4 +1,4 @@
-package com.skcc.market.eda.common.comment.core.object.command;
+package com.skcc.market.eda.comment.core.command;
 
 import java.util.UUID;
 
