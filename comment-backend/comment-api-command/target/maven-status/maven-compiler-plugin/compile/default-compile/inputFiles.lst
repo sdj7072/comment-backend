@@ -1,0 +1,11 @@
+/Users/deokjae.seo/git/comment-backend/comment-backend/comment-api-command/src/main/java/com/skcc/market/eda/comment/infrastructure/persistent/axon/CommentAggregate.java
+/Users/deokjae.seo/git/comment-backend/comment-backend/comment-api-command/src/main/java/com/skcc/market/eda/comment/core/application/object/command/ModifyCommentCommand.java
+/Users/deokjae.seo/git/comment-backend/comment-backend/comment-api-command/src/main/java/com/skcc/market/eda/comment/controller/web/CommentCommandWebController.java
+/Users/deokjae.seo/git/comment-backend/comment-backend/comment-api-command/src/main/java/com/skcc/market/eda/comment/core/application/object/command/DisplayYnUpdateCommentCommand.java
+/Users/deokjae.seo/git/comment-backend/comment-backend/comment-api-command/src/main/java/com/skcc/market/eda/comment/core/application/service/CommentService.java
+/Users/deokjae.seo/git/comment-backend/comment-backend/comment-api-command/src/main/java/com/skcc/market/eda/comment/core/application/object/command/WriteCommentCommand.java
+/Users/deokjae.seo/git/comment-backend/comment-backend/comment-api-command/src/main/java/com/skcc/market/eda/common/config/CommonBean.java
+/Users/deokjae.seo/git/comment-backend/comment-backend/comment-api-command/src/main/java/com/skcc/market/CommentApplication.java
+/Users/deokjae.seo/git/comment-backend/comment-backend/comment-api-command/src/main/java/com/skcc/market/eda/common/config/SwaggerConfig.java
+/Users/deokjae.seo/git/comment-backend/comment-backend/comment-api-command/src/main/java/com/skcc/market/eda/comment/core/application/object/dto/CommentDTO.java
+/Users/deokjae.seo/git/comment-backend/comment-backend/comment-api-command/src/main/java/com/skcc/market/eda/comment/core/application/service/ICommentService.java

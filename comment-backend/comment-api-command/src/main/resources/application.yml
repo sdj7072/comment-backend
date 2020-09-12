@@ -1,0 +1,14 @@
+server:
+  port: 8080
+  
+spring:
+  application:
+    name: Comment-api-command
+  profiles:
+    active: local
+
+##spring.application.name=Comment Management Service
+
+##spring.profiles.active=local
+
+##logging.config=classpath:config/log/logback-${spring.profiles.active}.xml

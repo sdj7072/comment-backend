@@ -5,13 +5,14 @@
     <artifactId>spring-boot-starter-parent</artifactId>
     <version>2.3.3.RELEASE</version>
   </parent>
-  <groupId>com.pgm</groupId>
-  <artifactId>comment-backend</artifactId>
+  <groupId>com.skcc.market</groupId>
+  <artifactId>market-comment-eda-api</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
   <modules>
-  	<module>comment-command</module>
-  	<module>comment-query</module>
+  	<module>comment-api-command</module>
+  	<module>comment-api-query</module>
+  	<module>comment-common</module>
   </modules>
   
     <dependencies>
@@ -37,13 +38,17 @@
   	</dependency>
   	<dependency>
   		<groupId>io.springfox</groupId>
-  		<artifactId>springfox-swagger-ui</artifactId>
+  		<artifactId>springfox-boot-starter</artifactId>
   		<version>3.0.0</version>
   	</dependency>
   	<dependency>
-  		<groupId>io.springfox</groupId>
-  		<artifactId>springfox-swagger2</artifactId>
-  		<version>3.0.0</version>
+  		<groupId>org.springframework.boot</groupId>
+  		<artifactId>spring-boot-starter-test</artifactId>
+  	</dependency>
+  	<dependency>
+  		<groupId>org.modelmapper</groupId>
+  		<artifactId>modelmapper</artifactId>
+  		<version>2.3.8</version>
   	</dependency>
     </dependencies>
 </project>
