@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration scan="true" scanPeriod="60 seconds">
+
+	<springProfile name="local">
+		    <!-- CONSOLE LOG APPENDER -->
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <charset>UTF-8</charset>
+            <!-- <pattern>%highlight(%date{"yyyy-MM-dd HH:mm:ss.SSS"}) %highlight(%-5level) [%green(%X{sessionId})] %yellow(%logger{36}@%method\(%line\)) - %msg%n%throwable</pattern> -->
+            <pattern>%cyan(%date{"yyyy-MM-dd HH:mm:ss.SSS"}) %highlight(%-5level) %magenta(${PID:- }) --- %cyan[%8.15t] - %blue(%-40.40logger{36}) %blue[%3.10line] %red(:) %msg%n%throwable</pattern>
+        </encoder>
+    </appender>
+
+    <logger name="com.skcc.market" additivity="false" level="DEBUG">
+        <appender-ref ref="CONSOLE" />
+    </logger>
+
+    <logger name="org.axonframework" additivity="false" level="INFO">
+        <appender-ref ref="CONSOLE" />
+    </logger>
+
+    <root>
+        <level value="INFO" />
+        <appender-ref ref="CONSOLE" />
+    </root>
+	</springProfile>
+
+</configuration>
+

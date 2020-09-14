@@ -17,12 +17,14 @@ public class DisplayYnUpdateCommentCommand {
 	@TargetAggregateIdentifier
 	private String aggregateId;
 	private Long commentId;
+	private Long memberId;
 	private String displayYn;
 
 	@Builder
-	public DisplayYnUpdateCommentCommand(Long commentId, String displayYn) {
+	public DisplayYnUpdateCommentCommand(Long commentId, Long postId, Long memberId, String displayYn) {
 		this.aggregateId = UUID.randomUUID().toString();
 		this.commentId = commentId;
+		this.memberId = memberId;
 		this.displayYn = displayYn;
 	}
 }

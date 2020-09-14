@@ -1,3 +1,5 @@
 /Users/deokjae.seo/git/comment-backend/comment-backend/comment-common/src/main/java/com/skcc/market/eda/comment/core/event/CommentDisplayYnUpdateEvent.java
 /Users/deokjae.seo/git/comment-backend/comment-backend/comment-common/src/main/java/com/skcc/market/eda/comment/core/event/CommentWriteEvent.java
 /Users/deokjae.seo/git/comment-backend/comment-backend/comment-common/src/main/java/com/skcc/market/eda/comment/core/event/CommentModifyEvent.java
+/Users/deokjae.seo/git/comment-backend/comment-backend/comment-common/src/main/java/com/skcc/market/eda/comment/core/application/object/core/domain/entity/CommentPostType.java
+/Users/deokjae.seo/git/comment-backend/comment-backend/comment-common/src/main/java/com/skcc/market/eda/comment/core/application/object/dto/CommentDTO.java

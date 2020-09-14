@@ -63,7 +63,7 @@ public class CommentAggregate {
 		
 		this.aggregateId = command.getAggregateId();
 		apply(new CommentModifyEvent(command.getCommentId(),
-				command.getPostType(),
+				command.getMemberId(),
 				command.getContent()));
 		
 		log.debug("#Event : [CommentModifyEvent] 송신");
@@ -72,7 +72,7 @@ public class CommentAggregate {
 	@EventSourcingHandler
 	public void on(CommentModifyEvent event) {
 		this.commentId = event.getCommentId();
-		this.postType = event.getPostType();
+		this.memberId = event.getMemberId();
 		this.content= event.getContent();
 	}
 	
@@ -82,6 +82,7 @@ public class CommentAggregate {
 		
 		this.aggregateId = command.getAggregateId();
 		apply(new CommentDisplayYnUpdateEvent(command.getCommentId(),
+				command.getMemberId(),
 				command.getDisplayYn()));
 		
 		log.debug("#Event : [CommentDisplayYnUpdateEvent] 송신");
@@ -90,7 +91,8 @@ public class CommentAggregate {
 	@EventSourcingHandler
 	public void on(CommentDisplayYnUpdateEvent event) {
 		this.commentId = event.getCommentId();
-		this.displayYn = event.getDiplayYn();
+		this.memberId = event.getMemberId();
+		this.displayYn = event.getDisplayYn();
 	}
 
 }

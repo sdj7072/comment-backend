@@ -1,4 +1,14 @@
-/Users/deokjae.seo/git/comment-backend/comment-backend/comment-api-query/src/main/java/com/skcc/market/eda/comment/core/entity/CommentEntity.java
-/Users/deokjae.seo/git/comment-backend/comment-backend/comment-api-query/src/main/java/com/skcc/market/eda/comment/core/projection/CommentProjection.java
-/Users/deokjae.seo/git/comment-backend/comment-backend/comment-api-query/src/main/java/com/skcc/market/eda/comment/core/repository/CommentRepository.java
+/Users/deokjae.seo/git/comment-backend/comment-backend/comment-api-query/src/main/java/com/skcc/market/eda/common/config/SwaggerConfig.java
+/Users/deokjae.seo/git/comment-backend/comment-backend/comment-api-query/src/main/java/com/skcc/market/eda/comment/core/domain/entity/CommentPostTypeConverter.java
+/Users/deokjae.seo/git/comment-backend/comment-backend/comment-api-query/src/main/java/com/skcc/market/eda/comment/core/application/service/CommentProjectionService.java
+/Users/deokjae.seo/git/comment-backend/comment-backend/comment-api-query/src/main/java/com/skcc/market/eda/comment/core/domain/entity/CommentEntity.java
+/Users/deokjae.seo/git/comment-backend/comment-backend/comment-api-query/src/main/java/com/skcc/market/eda/comment/controller/handler/CommentEventHandler.java
+/Users/deokjae.seo/git/comment-backend/comment-backend/comment-api-query/src/main/java/com/skcc/market/eda/comment/controller/web/CommentQueryWebController.java
+/Users/deokjae.seo/git/comment-backend/comment-backend/comment-api-query/src/main/java/com/skcc/market/eda/comment/core/application/service/ICommentProjectionService.java
+/Users/deokjae.seo/git/comment-backend/comment-backend/comment-api-query/src/main/java/com/skcc/market/eda/comment/infrastructure/persistent/jpa/CommentQueryRepository.java
+/Users/deokjae.seo/git/comment-backend/comment-backend/comment-api-query/src/main/java/com/skcc/market/eda/comment/core/application/service/ICommentQueryService.java
+/Users/deokjae.seo/git/comment-backend/comment-backend/comment-api-query/src/main/java/com/skcc/market/eda/comment/infrastructure/persistent/jpa/CommentProjectionRepository.java
+/Users/deokjae.seo/git/comment-backend/comment-backend/comment-api-query/src/main/java/com/skcc/market/eda/common/config/CommonBean.java
+/Users/deokjae.seo/git/comment-backend/comment-backend/comment-api-query/src/main/java/com/skcc/market/eda/comment/core/application/service/CommentQueryService.java
+/Users/deokjae.seo/git/comment-backend/comment-backend/comment-api-query/src/main/java/com/skcc/market/eda/comment/controller/handler/CommentQueryHandler.java
 /Users/deokjae.seo/git/comment-backend/comment-backend/comment-api-query/src/main/java/com/skcc/market/CommentApplication.java

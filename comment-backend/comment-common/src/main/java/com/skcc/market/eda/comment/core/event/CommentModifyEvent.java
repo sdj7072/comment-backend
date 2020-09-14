@@ -14,7 +14,7 @@ import lombok.ToString;
 public class CommentModifyEvent {
 
 	private Long commentId;
-	private String postType;
+	private Long memberId;
 	private String content;
 
 }
