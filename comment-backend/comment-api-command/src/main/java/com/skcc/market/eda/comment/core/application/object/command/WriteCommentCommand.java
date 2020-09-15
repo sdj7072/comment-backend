@@ -4,6 +4,8 @@ import java.util.UUID;
 
 import org.axonframework.modelling.command.TargetAggregateIdentifier;
 
+import com.skcc.market.eda.comment.core.application.object.core.domain.entity.CommentPostType;
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;

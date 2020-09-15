@@ -24,6 +24,9 @@ public class CommonBean {
 		modelMapper.createTypeMap(CommentEntity.class, CommentDTO.class)
 			.addMapping(CommentEntity::getId, CommentDTO::setCommentId);
 		
+		modelMapper.createTypeMap(CommentDTO.class, CommentEntity.class)
+			.addMapping(CommentDTO::getCommentId, CommentEntity::setId);
+		
 		return modelMapper;
 	}
 }

@@ -21,8 +21,9 @@ public class ModifyCommentCommand {
 	private String content;
 
 	@Builder
-	public ModifyCommentCommand(Long commentId, Long postId, Long memberId, String postType, String content, String displayYn) {
+	public ModifyCommentCommand(Long commentId, Long memberId, String content, String displayYn) {
 		this.aggregateId = UUID.randomUUID().toString();
+		this.commentId = commentId;
 		this.memberId = memberId;
 		this.content = content;
 	}

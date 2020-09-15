@@ -25,6 +25,7 @@ public class CommentCommandService implements ICommentCommandService {
 	public void doWriteCommentCommandService(CommentDTO commentDTO) throws Exception {
 		
 		CommentWriteEvent event = modelMapper.map(commentDTO, CommentWriteEvent.class);
+		event.setPostType(commentDTO.getPostType().name());
 		
 		commandGateway.send(WriteCommentCommand.builder()
 				.postId(event.getPostId())

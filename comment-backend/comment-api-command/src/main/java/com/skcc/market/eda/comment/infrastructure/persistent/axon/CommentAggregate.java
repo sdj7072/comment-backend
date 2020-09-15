@@ -10,6 +10,7 @@ import org.axonframework.spring.stereotype.Aggregate;
 import com.skcc.market.eda.comment.core.application.object.command.DisplayYnUpdateCommentCommand;
 import com.skcc.market.eda.comment.core.application.object.command.ModifyCommentCommand;
 import com.skcc.market.eda.comment.core.application.object.command.WriteCommentCommand;
+import com.skcc.market.eda.comment.core.application.object.core.domain.entity.CommentPostType;
 import com.skcc.market.eda.comment.core.event.CommentDisplayYnUpdateEvent;
 import com.skcc.market.eda.comment.core.event.CommentModifyEvent;
 import com.skcc.market.eda.comment.core.event.CommentWriteEvent;

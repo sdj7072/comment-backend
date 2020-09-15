@@ -1,6 +1,6 @@
 package com.skcc.market.eda.comment.controller.handler;
 
-import java.util.Optional;
+import java.util.List;
 
 import org.axonframework.config.ProcessingGroup;
 import org.axonframework.queryhandling.QueryHandler;
@@ -20,9 +20,19 @@ public class CommentQueryHandler {
 	@Autowired
 	CommentQueryRepository commentQueryRepository;
 	
-	@QueryHandler(queryName = "findByCommentId")
-	public Optional<CommentEntity> on(Long commentId) {
-		return commentQueryRepository.findById(commentId);
+	@QueryHandler(queryName = "findCommentByCommentId")
+	public CommentEntity findCommentByCommentId(Long commentId) {
+		return (commentQueryRepository.findById(commentId)).get();
+	}
+	
+	@QueryHandler(queryName = "findCommentListByMemberId")
+	public List<CommentEntity> findCommentListByMemberId(Long memberId) {
+		return commentQueryRepository.findByMemberId(memberId);
+	}
+	
+	@QueryHandler(queryName = "findCommentListByPostId")
+	public List<CommentEntity> findCommentListByPostId(Long postId) {
+		return commentQueryRepository.findByPostId(postId);
 	}
 	
 }

@@ -2,11 +2,12 @@ package com.skcc.market.eda.comment.core.application.service;
 
 import java.time.LocalDateTime;
 
+import org.modelmapper.ModelMapper;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.skcc.market.eda.comment.core.application.object.core.domain.entity.CommentPostType;
+import com.skcc.market.eda.comment.core.application.object.dto.CommentDTO;
 import com.skcc.market.eda.comment.core.domain.entity.CommentEntity;
 import com.skcc.market.eda.comment.core.event.CommentDisplayYnUpdateEvent;
 import com.skcc.market.eda.comment.core.event.CommentModifyEvent;
@@ -22,6 +23,11 @@ import lombok.extern.slf4j.Slf4j;
 @Service
 public class CommentProjectionService implements ICommentProjectionService {
 	
+	private final ModelMapper modelMapper;
+	
+	@Autowired
+	CommentQueryService commentQueryService;
+	
 	@Autowired
 	CommentProjectionRepository commentProjectionRepository;
 	
@@ -30,15 +36,10 @@ public class CommentProjectionService implements ICommentProjectionService {
 	
 	@Override
 	public void doWriteCommentProjectionService(CommentWriteEvent event) throws Exception {
-		CommentEntity commentEntity = CommentEntity.builder()
-				.postId(event.getPostId())
-				.memberId(event.getMemberId())
-				.postType(CommentPostType.valueOf(event.getPostType()))
-				.content(event.getContent())
-				.displayYn(event.getDisplayYn())
-				.registerTime(LocalDateTime.now())
-				.updateTime(LocalDateTime.now())
-				.build();
+		
+		CommentEntity commentEntity = modelMapper.map(event, CommentEntity.class);
+		commentEntity.setRegisterTime(LocalDateTime.now());
+		commentEntity.setUpdateTime(LocalDateTime.now());
 		
 		commentProjectionRepository.save(commentEntity);
 	}
@@ -46,18 +47,24 @@ public class CommentProjectionService implements ICommentProjectionService {
 	@Override
 	public void doModifyCommentProjectionService(CommentModifyEvent event) throws Exception {
 		
-		CommentEntity commentEntity = commentQueryRepository.findById(event.getCommentId()).get();
+		CommentDTO commentDTO = commentQueryService.getCommentByCommentId(event.getCommentId());
+		
+		CommentEntity commentEntity = modelMapper.map(commentDTO, CommentEntity.class);
 		BeanUtils.copyProperties(event, commentEntity);
 		commentEntity.setUpdateTime(LocalDateTime.now());
+		
 		commentProjectionRepository.save(commentEntity);
 	}
 	
 	@Override
 	public void doDisplayYnUpdateCommentProjectionService(CommentDisplayYnUpdateEvent event) throws Exception {
 		
-		CommentEntity commentEntity = commentQueryRepository.findById(event.getCommentId()).get();
+		CommentDTO commentDTO = commentQueryService.getCommentByCommentId(event.getCommentId());
+		
+		CommentEntity commentEntity = modelMapper.map(commentDTO, CommentEntity.class);
 		BeanUtils.copyProperties(event, commentEntity);
 		commentEntity.setUpdateTime(LocalDateTime.now());
+		
 		commentProjectionRepository.save(commentEntity);
 	}
 	
